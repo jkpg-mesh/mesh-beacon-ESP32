@@ -1,5 +1,6 @@
 .pio
 .vscode
-/src/meshtastic/*
+/src/meshtastic/*.pb.h
+/src/meshtastic/*.pb.cpp
 
 MyConfig.ini
