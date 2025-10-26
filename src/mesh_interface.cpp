@@ -355,7 +355,8 @@ namespace MeshInterface {
         mp.channel = 0;  // Default channel
         mp.decoded.portnum = meshtastic_PortNum_TEXT_MESSAGE_APP;
         mp.which_payload_variant = meshtastic_MeshPacket_decoded_tag;
-
+        mp.hop_limit = 3;
+        mp.hop_start = 3;
         // Copy message string into payload
         size_t msg_len = strlen(message);
         if (msg_len > sizeof(mp.decoded.payload.bytes)) {
